@@ -42,7 +42,7 @@ body {
 
   > div {
     border-bottom: 0;
-    @include box-shadow(rgba(0, 0, 0, .2) 0 6px 0 1px);
+    @include box-shadow(rgba(0, 0, 0, .15) 0 6px 0 1px);
   }
 }
 
@@ -66,7 +66,7 @@ a {
   display: none;
 }
 
-footer {
+body > footer {
   margin-top: 3em;
   color: #fff !important;
   text-shadow: none !important;
