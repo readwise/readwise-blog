@@ -2,10 +2,10 @@
 // To give it a try, uncomment some of the lines below, make changes, rebuild your blog, and see how it works.
 
 //$header-font-size: 1em;
-//$header-padding-top: 1.5em;
-//$header-padding-bottom: 1.5em;
+$header-padding-top: 1em;
+$header-padding-bottom: 1em;
 
-//$max-width: 1350px;
+$max-width: 660px;
 //$indented-lists: true;
 
 // Padding used for layout margins
@@ -15,7 +15,7 @@
 //$pad-wide: 55px;
 
 // Sidebar widths used in media queries
-//$sidebar-width-medium: 240px;
-//$sidebar-pad-medium: 15px;
-//$sidebar-pad-wide: 20px;
-//$sidebar-width-wide: 300px;
+$sidebar-width-medium: 0;
+$sidebar-pad-medium:   0;
+$sidebar-pad-wide:     0;
+$sidebar-width-wide:   0;

@@ -1,2 +1,80 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+$link-color: #4670a8;
+$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25);
+$link-color-visited: $link-color;
+$link-color-active: adjust-color($link-color-hover, $lightness: -15);
+
+$page-bg: #4670a8;
+html {
+  background-color: $page-bg;
+  background: image-url('bg-pattern.png') no-repeat center top, image-url('bg.jpg') center top;
+}
+
+body {
+  > header {
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
+
+    h1 {
+      display: block;
+
+      a {
+        background: image-url('logo.png') no-repeat center top;
+        width: 380px;
+        height: 344px;
+        display: block;
+        margin: 0 auto;
+        text-indent: -99999px;
+      }
+    }
+
+    h2 {
+      display: none;
+    }
+  }
+
+  > nav {
+    display: none;
+  }
+
+  > div {
+    border-bottom: 0;
+    @include box-shadow(rgba(0, 0, 0, .2) 0 6px 0 1px);
+  }
+}
+
+a {
+  color: $link-color;
+
+  &:visited, {
+    color: $link-color-visited;
+  }
+
+  &:hover, {
+    color: $link-color-hover;
+  }
+
+  &:active, {
+    color: $link-color-active;
+  }
+}
+
+.toggle-sidebar {
+  display: none;
+}
+
+footer {
+  margin-top: 3em;
+  color: #fff !important;
+  text-shadow: none !important;
+  border-top: 0 !important;
+  background: transparent !important;
+  text-align: center;
+
+  a {
+    color: #fff !important;
+  }
+}
