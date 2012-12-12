@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://blog.readwise.net
+url: http://readwise.net/blog/
 title: 美味爱读－ReadWise 博客
 subtitle: 美味爱读的产品故事
 author: ReadWise Team
@@ -26,7 +26,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /
+root: /blog/
 permalink: /:month-:day-:year/:title.html
 source: source
 destination: public
