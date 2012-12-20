@@ -64,10 +64,10 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: 
 twitter_tweet_count: 4
 twitter_show_replies: false
-twitter_follow_button: false
+twitter_follow_button: true
 twitter_show_follower_count: false
 twitter_tweet_button: false
 
@@ -93,7 +93,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-36851052-1
 
 # Facebook Like
 facebook_like: false
