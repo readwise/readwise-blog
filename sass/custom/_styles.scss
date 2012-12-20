@@ -117,9 +117,14 @@ a {
 
 body #content > div > article {
   background: $main-bg $noise-bg;
+  margin-top: $pad-wide;
   padding-top: $pad-wide;
   padding-bottom: $pad-medium;
   @include box-shadow(rgba(0, 0, 0, .15) 0 6px 0 1px);
+}
+
+#main {
+  margin-top: -$pad-wide;
 }
 
 article > footer {
