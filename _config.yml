@@ -64,6 +64,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
+twitter: ReadWise_net # Defined by Tunghsiao Liu, make sure the default Twitter settings untouched.
 twitter_user:
 twitter_tweet_count: 4
 twitter_show_replies: false

@@ -129,7 +129,7 @@ body > footer {
     color: $link-color;
     background: #fff;
     border-radius: 1000px;
-    padding: 6px 12px;
+    padding: 8px 12px;
     font-family: $sans;
     @include transition(padding .1s linear);
 
@@ -225,6 +225,27 @@ body #content > div > article {
 
 article > footer {
   padding-bottom: 0;
+
+  .sharing + .meta {
+    position: relative;
+    overflow: visible;
+
+    .basic-alignment.left {
+      position: absolute;
+      text-align: left;
+      top: 10px;
+      left: 0;
+      width: 40%;
+    }
+
+    .basic-alignment.right {
+      position: absolute;
+      text-align: right;
+      top: 10px;
+      right: 0;
+      width: 40%;
+    }
+  }
 }
 
 #content .blog-index article h1 a {
@@ -237,4 +258,20 @@ article > footer {
 
 .sidebar {
   display: none; // the easiest way
+}
+
+.tweet {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background: image-url('tweet.png') no-repeat 0 0 ;
+  background-size: 50px;
+  text-indent: -99999px;
+  opacity: .7;
+  @include transition(opacity .2s ease);
+
+  &:hover {
+    opacity: .9999; // Fix nudging bug on non-retina screens
+  }
 }
