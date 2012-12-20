@@ -13,6 +13,9 @@ html {
   background: image-url('bg-pattern.png') no-repeat center top, image-url('bg.jpg') center top;
 }
 
+$logo-width: 380px;
+$logo-height: 344px;
+
 body {
   > header {
     background: transparent;
@@ -24,8 +27,8 @@ body {
 
       a {
         background: image-url('logo.png') no-repeat center top;
-        width: 380px;
-        height: 344px;
+        width: $logo-width;
+        height: $logo-height;
         display: block;
         margin: 0 auto;
         text-indent: -99999px;
@@ -49,6 +52,34 @@ body {
       background: transparent;
       border-right: 0;
     }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    background-image: image-url('bg-pattern@2x.png'), image-url('bg.jpg');
+    background-size: 979px 484px, 292px 181px;
+  }
+
+  body > header h1 a {
+    background-image: image-url('logo@2x.png');
+    background-size: $logo-width $logo-height;
+  }
+}
+
+// iPhone portrait
+@media (max-device-width: 480px) and (orientation: portrait) {
+  body > header h1 a {
+    width: $logo-width * .8;
+    height: $logo-height * .8;
+    background-size: $logo-width * .8 $logo-height * .8;
+  }
+}
+
+@media (max-width: 480px) {
+  #content > div, #content > article {
+    padding-top: $pad-medium;
+    padding-bottom: $pad-medium;
   }
 }
 
@@ -124,7 +155,7 @@ body #content > div > article {
   margin-top: $pad-wide;
   padding-top: $pad-wide;
   padding-bottom: $pad-medium;
-  @include box-shadow(rgba(0, 0, 0, .15) 0 6px 0 1px);
+  @include box-shadow(rgba(0, 0, 0, .15) 0 15px 0 -5px);
 
   header {
     text-align: center;
@@ -180,5 +211,3 @@ article > footer {
 .sidebar {
   display: none; // the easiest way
 }
-
-
