@@ -6,6 +6,7 @@ $link-color: #4670a8;
 $link-color-hover: #ff8150;
 $link-color-visited: $link-color;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15);
+$heading-font-family: "PT Sans", "Georgia", "Helvetica Neue", Arial, sans-serif;
 
 $page-bg: #4670a8;
 html {
@@ -83,6 +84,10 @@ body > footer {
 
   a {
     color: #fff !important;
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
   }
 }
 
