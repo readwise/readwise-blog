@@ -5,4 +5,20 @@
 {% else %}
   {% assign author = site.author %}
 {% endif %}
-{% if author %}<span class="byline author vcard">Posted by <span class="fn">{{ author }}</span></span>{% endif %}
+
+{% if post.author-url %}
+  {% assign author-url = post.author-url %}
+{% elsif page.author-url %}
+  {% assign author-url = page.author-url %}
+{% else %}
+  {% assign author-url = site.author-url %}
+{% endif %}
+
+{% if author %}
+<span class="byline author vcard">Posted by
+  {% if author-url %}
+    <a href="{{ author-url }}"><span class="fn">{{ author }}</span></span></a>
+  {% else %}
+    <span class="fn">{{ author }}</span></span>
+  {% endif %}
+{% endif %}
