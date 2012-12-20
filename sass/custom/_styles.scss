@@ -125,6 +125,27 @@ body #content > div > article {
   padding-top: $pad-wide;
   padding-bottom: $pad-medium;
   @include box-shadow(rgba(0, 0, 0, .15) 0 6px 0 1px);
+
+  header {
+    text-align: center;
+    padding-top: 0;
+
+    .meta {
+      position: static;
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    [rel=full-article] {
+      background: #fff;
+      padding: 5px 15px;
+      border-radius: 32px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
 }
 
 #main {
