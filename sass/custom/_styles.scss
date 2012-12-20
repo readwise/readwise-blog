@@ -204,8 +204,19 @@ body #content > div > article {
   &:nth-of-type(10) { @include rotate(1deg); }
 }
 
-#blog-archives article footer {
-  text-align: left !important;
+#blog-archives {
+
+  article footer {
+    text-align: left !important;
+  }
+
+  time {
+    top: 1.4em;
+  }
+
+  h1 a:hover {
+    color: $link-color-hover;
+  }
 }
 
 #main {
