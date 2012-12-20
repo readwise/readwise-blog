@@ -2,7 +2,8 @@
 // Add styles here to make changes without digging in too much
 
 $link-color: #4670a8;
-$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25);
+//$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25);
+$link-color-hover: #ff8150;
 $link-color-visited: $link-color;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15);
 
@@ -41,8 +42,13 @@ body {
   }
 
   > div {
+    background: transparent;
     border-bottom: 0;
-    @include box-shadow(rgba(0, 0, 0, .15) 0 6px 0 1px);
+
+    > div {
+      background: transparent;
+      border-right: 0;
+    }
   }
 }
 
@@ -73,8 +79,55 @@ body > footer {
   border-top: 0 !important;
   background: transparent !important;
   text-align: center;
+  margin-bottom: $pad-wide * 1.5;
 
   a {
     color: #fff !important;
   }
 }
+
+#content div.pagination {
+  margin-top: $pad-wide * 2;
+  padding: 0;
+
+  a {
+    color: $link-color;
+    background: #fff;
+    border-radius: 1000px;
+    padding: 15px 20px;
+    @include transition(padding .1s linear);
+
+    &:hover {
+      @include box-shadow(rgba(255, 255, 255, .15) 0 0 0 6px);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.entry-content a:hover {
+  border-bottom: 1px solid;
+}
+
+body #content > div > article {
+  background: $main-bg $noise-bg;
+  padding-top: $pad-wide;
+  padding-bottom: $pad-medium;
+  @include box-shadow(rgba(0, 0, 0, .15) 0 6px 0 1px);
+}
+
+article > footer {
+  padding-bottom: 0;
+}
+
+.sidebar {
+  display: none; // the easiest way
+}
+
+
