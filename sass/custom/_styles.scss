@@ -129,11 +129,25 @@ body > footer {
     color: $link-color;
     background: #fff;
     border-radius: 1000px;
-    padding: 15px 20px;
+    padding: 6px 12px;
+    font-family: $sans;
     @include transition(padding .1s linear);
 
     &:hover {
+      color: $link-color-hover;
       @include box-shadow(rgba(255, 255, 255, .15) 0 0 0 6px);
+    }
+  }
+
+  a.prev, a.next {
+    color: #fff;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    @include box-shadow(none);
+
+    &:hover {
+      border-bottom: 1px solid;
     }
   }
 }
@@ -179,18 +193,20 @@ body #content > div > article {
   }
 
   &:nth-of-type(1)  { @include rotate(0); }
-  &:nth-of-type(2)  { @include rotate(-.5deg); }
-  &:nth-of-type(3)  { @include rotate(.3deg); }
-  &:nth-of-type(4)  { @include rotate(-.7deg); }
-  &:nth-of-type(5)  { @include rotate(-1deg); }
-  &:nth-of-type(6)  { @include rotate(-.3deg); }
-  &:nth-of-type(7)  { @include rotate(.2deg); }
-  &:nth-of-type(8)  { @include rotate(1deg); }
-  &:nth-of-type(9)  { @include rotate(-.7deg); }
+  &:nth-of-type(2)  { @include rotate(-.7deg); }
+  &:nth-of-type(3)  { @include rotate(.5deg); }
+  &:nth-of-type(4)  { @include rotate(-.9deg); }
+  &:nth-of-type(5)  { @include rotate(-1.1deg); }
+  &:nth-of-type(6)  { @include rotate(-.5deg); }
+  &:nth-of-type(7)  { @include rotate(.3deg); }
+  &:nth-of-type(8)  { @include rotate(1.1deg); }
+  &:nth-of-type(9)  { @include rotate(-.8deg); }
   &:nth-of-type(10) { @include rotate(1deg); }
 }
 
-
+#blog-archives article footer {
+  text-align: left !important;
+}
 
 #main {
   margin-top: -$pad-wide * 1.5;
