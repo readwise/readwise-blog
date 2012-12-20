@@ -11,7 +11,7 @@ author-url: http://sunng.info/
 **tl;dr**: 我们发布了 [美味爱读 ReadWise.net](http://readwise.net/) 。
 
 我是一个重度的信息消费者。还在南京的时候，每天上班需要换一次公交车。在第一辆车上，把几个靠谱媒体上的文章都扫一眼，选其中重点的加进 Read it later。第二辆公交车上，打开 Read it later，再逐条看完。这个过程我称之为上班路上的 MapReduce。公交换乘的问题暂时还不能解决，但是信息消费的事我们准备插手了。
-
+<!--more-->
 ### 话题
 
 
