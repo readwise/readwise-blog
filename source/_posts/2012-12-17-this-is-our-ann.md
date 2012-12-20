@@ -4,7 +4,8 @@ title: "当我们 ANN 时我们说些什么"
 date: 2012-12-17 21:01
 comments: true
 categories: ann
-author: nsun
+author: Sun Ning
+author-url: http://sunng.info/
 ---
 
 **tl;dr**: 我们发布了 [美味爱读 ReadWise.net](http://readwise.net/) 。
