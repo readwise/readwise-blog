@@ -4,7 +4,7 @@ title: "R/W Update#2: 我们发布了移动客户端"
 date: 2013-03-01 10:00
 comments: true
 categories: ann
-author: Chenhan Wang
+author: Gabriel Wang
 author-url: http://gabrielwang.com
 ---
 
