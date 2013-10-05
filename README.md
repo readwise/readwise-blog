@@ -1,6 +1,6 @@
 # ReadWise Dev Blog
 
-Octopress runing on [ReadWise](http://readwise.net/)
+Octopress runing on [ReadWise](http://readwise.net/blog/)
 
 ## License
 (The MIT License)
